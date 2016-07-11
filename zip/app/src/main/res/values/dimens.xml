@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="size_large_84">84dp</dimen>
+
+    <dimen name="padding_large_24">24dp</dimen>
+    <dimen name="padding_med_16">16dp</dimen>
+    <dimen name="padding_small_8">8dp</dimen>
+
+    <dimen name="fontsize_large_34">34sp</dimen>
+    <dimen name="fontsize_med_24">24sp</dimen>
+    <dimen name="fontsize_small_15">15sp</dimen>
+    <dimen name="fontsize_xsmall_13">13sp</dimen>
+
+    <dimen name="share_icon_square_dimen_16">20dp</dimen>
+</resources>

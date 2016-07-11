@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/laureate_list_element_parent_linearLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marie Curie, née Sklodowska"
+        android:id="@+id/laureate_list_element_name_textView"
+        android:gravity="right|center_vertical"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="@dimen/fontsize_large_34"
+        android:fontFamily="sans-serif-thin"
+        android:minHeight="@dimen/size_large_84"
+        android:paddingRight="@dimen/padding_small_8"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/laureate_list_element_city_and_dates_linearLayout"
+        android:padding="@dimen/padding_small_8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Warsaw, Russian Empire (now Poland)"
+            android:textSize="@dimen/fontsize_small_15"
+            android:id="@+id/laureate_list_element_bornCityandCountry_textView"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/laureate_list_element_dates_linearLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/laureate_list_element_bornDate_wrapper_relativeLayout"
+                android:gravity="right"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B: "
+                    android:textSize="@dimen/fontsize_small_15"
+                    android:id="@+id/laureate_list_element_bornDate_label_textView"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_toRightOf="@id/laureate_list_element_bornDate_label_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1867-11-07"
+                    android:textSize="@dimen/fontsize_small_15"
+                    android:id="@+id/laureate_list_element_bornDate_textView"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/laureate_list_element_diedDate_wrapper_relativeLayout"
+                android:gravity="right"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D: "
+                    android:textSize="@dimen/fontsize_small_15"
+                    android:id="@+id/laureate_list_element_diedDate_label_textView"
+                    android:gravity="right"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_toRightOf="@id/laureate_list_element_diedDate_label_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1934-07-04"
+                    android:textSize="@dimen/fontsize_small_15"
+                    android:id="@+id/laureate_list_element_diedDate_textView"
+                    android:gravity="right"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/laureate_list_element_prize_list_wrapper_linearLayout">
+
+        <com.linearlistview.LinearListView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" />
+    </LinearLayout>
+
+</LinearLayout>

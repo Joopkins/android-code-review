@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">WillowTree</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="json_loading_server_error">Looks like we had some trouble loading your items. Please refresh the page.</string>
+    <string name="json_loading_text_parsing">Parsing JSON</string>
+    <string name="json_loading_text_requesting">Requesting Data</string>
+    <string name="json_loading_no_connection_error">Unable to connect to a network.</string>
+    <string name="json_loading_parse_error">The server response could not be parsed. Please refresh the page.</string>
+    <string name="json_loading_network_error">Network Error</string>
+    <string name="json_loading_auth_failure_error">Authentication Failure</string>
+    <string name="json_key_affiliations">affiliations</string>
+    <string name="api_url">http://api.nobelprize.org/v1/laureate.json</string>
+    <string name="bornCountry">bornCountry</string>
+    <string name="poland">poland</string>
+    <string name="no_death_date">0000-00-00</string>
+    <string name="no_network_dialog_title">No Available Network</string>
+    <string name="no_network_dialog_message">Unable to connect to a network. Check settings?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="mobile_data">mobile_data</string>
+    <string name="airplane_mode_enabled_dialogue_string">Airplane mode is enabled.\nOpen settings?</string>
+    <string name="no_connection_available_dialogue_string">All connections disabled.\nOpen settings?</string>
+    <string name="mobile">Mobile</string>
+    <string name="wifi">Wifi</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/prize_list_element_parent_linearLayout">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prize_list_element_top_linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1995"
+            android:id="@+id/prize_list_element_date_textView"
+            android:layout_gravity="center_vertical"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="@dimen/fontsize_large_34"
+            android:fontFamily="sans-serif-thin"
+            android:paddingLeft="@dimen/padding_small_8"
+            android:paddingRight="@dimen/padding_small_8"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/prize_list_element_category_and_share_linearLayout"
+            android:paddingLeft="@dimen/padding_small_8"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prize_list_element_share_linearLayout">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peace"
+                android:textAllCaps="true"
+                android:textSize="@dimen/fontsize_med_24"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"
+                android:includeFontPadding="false"
+                android:id="@+id/prize_list_element_category_textView"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="for their efforts to diminish the part played by nuclear arms in international politics and, in the longer run, to eliminate such arms"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="@dimen/fontsize_xsmall_13"
+        android:paddingLeft="@dimen/padding_med_16"
+        android:paddingRight="@dimen/padding_med_16"
+        android:paddingTop="@dimen/padding_small_8"
+        android:paddingBottom="@dimen/padding_small_8"
+        android:id="@+id/prize_list_element_motivation_textView" />
+</LinearLayout>
